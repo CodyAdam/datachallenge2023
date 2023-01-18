@@ -4,10 +4,10 @@ Le Master Mathématiques Appliquées, Statistique (Universités de Rennes 1 et R
 
 ## Un grand merci à nos trois sponsors pour 2023 !
 <img src="img/logo_enedis.png" width="200">
-![img|200](img/Groupama_FB_RVB.jpg)
-![img|200](img/logo-Fondation-Rennes1-couleur-nobaseline.png)
+<img src="img/Groupama_FB_RVB.jpg" width="200">
+<img src="img/logo-Fondation-Rennes1-couleur-nobaseline.png" width="200">
 
 ## Ainsi qu'au organisateurs et partenaires !
-![](img/logo_amsr.jpg | width=200)
-![](img/logo_aerief.jpg | width=200)
-![](img/UNIRENNES_LOGOnoir_0.png | width=200)
+<img src="img/logo_amsr.jpg" width="200">
+<img src="img/logo_aerief.jpg" width="200">
+<img src="img/UNIRENNES_LOGOnoir_0.png" width="200">
