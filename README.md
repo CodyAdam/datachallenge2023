@@ -6,6 +6,7 @@ Le Master Mathématiques Appliquées, Statistique (Universités de Rennes 1 et R
 ## Sponsors et partenaires
 
 Un grand merci à nos sponsors 2023
+
 <a href="https://www.enedis.fr" target="_blank"><img src="img/logo_enedis.png" width="200"></a> &nbsp;&nbsp; <a href="https://www.groupama.fr/" target="_blank"><img src="img/Groupama_FB_RVB.jpg" width="200"></a> &nbsp;&nbsp; <a href="https://fondation.univ-rennes.fr/" target="_blank"><img src="img/logo-Fondation-Rennes1-couleur-nobaseline.png" width="200"></a>
 
 Ainsi qu'aux organisateurs et partenaires
