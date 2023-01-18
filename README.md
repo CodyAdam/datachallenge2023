@@ -11,3 +11,4 @@ Le Master Mathématiques Appliquées, Statistique (Universités de Rennes 1 et R
 <img src="img/logo_amsr.jpg" width="200">
 <img src="img/logo_aerief.jpg" width="200">
 <img src="img/UNIRENNES_LOGOnoir_0.png" width="200">
+<img src="img/taceconomics-100px-white.png" width="200">
