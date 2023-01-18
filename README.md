@@ -6,4 +6,4 @@ Le Master Mathématiques Appliquées, Statistique (Universités de Rennes 1 et R
 <a href="https://www.enedis.fr" target="_blank"><img src="img/logo_enedis.png" width="200"></a> <a href="https://www.groupama.fr/" target="_blank"><img src="img/Groupama_FB_RVB.jpg" width="200"></a> <a href="https://fondation.univ-rennes.fr/" target="_blank"><img src="img/logo-Fondation-Rennes1-couleur-nobaseline.png" width="200"></a>
 
 ## Ainsi qu'au organisateurs et partenaires !
-<img src="img/logo_amsr.jpg" width="200"> <img src="img/logo_aerief.jpg" width="200"> <img src="img/UNIRENNES_LOGOnoir_0.png" width="200"> <img src="img/taceconomics-100px-white.png" width="100">
+<a href="https://eco.univ-rennes.fr/amsr" target="_blank"><img src="img/logo_amsr.jpg" width="200"></a> <a href="https://eco.univ-rennes.fr/aerief" target="_blank"><img src="img/logo_aerief.jpg" width="200"></a> <a href="https://www.univ-rennes.fr/" target="_blank"><img src="img/UNIRENNES_LOGOnoir_0.png" width="200"></a> <a href="https://taceconomics.com" target="_blank"><img src="img/taceconomics-100px-white.png" width="100"></a>
