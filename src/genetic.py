@@ -6,7 +6,6 @@ import utils
 
 # format for a solution
 class Individual:
-
     def __init__(self, nodes, edges, values, base_count, genes=None):
         self.nodes = nodes
         self.edges = edges
@@ -22,7 +21,7 @@ class Individual:
         if self.genes is None:
             self.genes = set()
             # randomly initialize the genes
-            while len(self.genes) == base_count:
+            while len(self.genes) < base_count:
                 index = random.randint(0, len(nodes) - 1)
                 self.genes.add(index)
 
@@ -34,24 +33,24 @@ class Individual:
 
     def update_fitness(self):
         self.fitness = 0
+        self.avg_dist_to_base = 0
+        self.nb_without_base = 0
         for node in self.nodes:
             base, base_dist = self.nearest_base_and_dist(node)
             if base is not None:
                 self.fitness += base_dist * self.values[node]
                 self.avg_dist_to_base += base_dist
             else:
-                self.fitness += float('infinity')
-                if self.nb_without_base is None:
-                    self.nb_without_base = 0
+                self.fitness += 100
                 self.nb_without_base += 1
-        if self.avg_dist_to_base is not None:
-            self.avg_dist_to_base /= len(self.nodes)
+        self.avg_dist_to_base /= len(self.nodes)
         self.fitness = 100000 / self.fitness
 
     def nearest_base_and_dist(self, node):
         base = None
         base_dist = float('infinity')
-        for current_base in self.genes:
+        for current_base_index in self.genes:
+            current_base = self.nodes[current_base_index]
             if self.edges[node][current_base] < base_dist:
                 base = node
                 base_dist = self.edges[node][current_base]

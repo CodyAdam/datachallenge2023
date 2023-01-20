@@ -11,15 +11,15 @@ print("Optimizing...")
 edges = utils.optimize_edges(nodes, edges)
 
 print("Generating population...")
-population = Population(100,
+population = Population(200,
                         nodes,
                         edges,
                         values,
-                        base_count=5,
-                        mutation_rate=0.1)
+                        base_count=30,
+                        mutation_rate=0.4)
 
 print("Starting evolution...")
-for i in range(5):
+for i in range(20):
     population.next_generation()
     print("Generation {:>2} : {:>10}".format(i, str(population.best_individual)))
 

@@ -28,7 +28,7 @@ def parse():
     communes = communes.merge(lvls,
                               left_on='Code Officiel Commune',
                               right_on='code_insee_commune')
-    communes = communes.sample(20)
+    # communes = communes.sample(20)
 
     # Convert the Geo Point column to a geometry column
     communes['geometry'] = communes['Geo Point'].apply(
