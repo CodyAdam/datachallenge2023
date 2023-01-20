@@ -3,7 +3,6 @@ import pandas as pd
 from shapely.geometry import Point
 import geopandas as gpd
 from geopandas import GeoDataFrame
-import utils
 import shapely.wkt
 import json
 import matplotlib.pyplot as plt
@@ -11,10 +10,10 @@ import matplotlib.pyplot as plt
 
 def parse():
     # lecture des données
-    temps = pd.read_csv('trajets_2.csv',
+    temps = pd.read_csv('data/temps_trajet30_filtered.csv',
                         delimiter=',',
                         encoding='utf-8')
-    lvls = pd.read_csv('intervention.csv',
+    lvls = pd.read_csv('data/niveau_interventions_improved.csv',
                        delimiter=',',
                        usecols=[
                         'code_insee_commune',
@@ -24,7 +23,7 @@ def parse():
                         'Act_res',
                        ],
                        encoding='utf-8')
-    communes = pd.read_csv('communes_bre.csv',
+    communes = pd.read_csv('data/communes_bre.csv',
                            delimiter=';',
                            usecols=[
                                'Code Officiel Commune', 'Geo Shape',

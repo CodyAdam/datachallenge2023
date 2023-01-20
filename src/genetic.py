@@ -5,6 +5,7 @@ import heapq
 
 # format for a solution
 class Individual:
+
     def __init__(self, nodes, edges, values, base_count, genes=None):
         self.nodes = nodes
         self.edges = edges
@@ -111,17 +112,19 @@ class Individual:
 
     # Display a solution showing the maximum distance between a node and its nearest base
     # The display also shows the average distance between a node and its nearest base
-    def  __str__() -> str:
-        distances = []
-        for node in self.nodes:
-            nearest_base, dist = self.get_nearest_base_and_dist(node)
-            distances.append(dist)
-        return f'Fitness: {self.fitness}, Max distance: {max(distances)}, Average distance: {sum(distances) / len(distances)}'
+    # def __str__() -> str:
+    #     distances = []
+    #     for node in self.nodes:
+    #         nearest_base, dist = self.get_nearest_base_and_dist(node)
+    #         distances.append(dist)
+    #     return f'Fitness: {self.fitness}, Max distance: {max(distances)}, Average distance: {sum(distances) / len(distances)}'
 
-    def get_nearest_base_and_dist() -> str :
-        return ""
+    # def get_nearest_base_and_dist() -> str:
+    #     return ""
+
 
 class Population:
+
     def __init__(self, pop_size, nodes, edges, values, base_count,
                  mutation_rate):
         self.pop_size = pop_size
@@ -136,7 +139,6 @@ class Population:
         ]
         self.best_individual = None
         self.best_fitness = -9999
-
 
     def update_fitness(self):
         for individual in self.individuals:
@@ -155,8 +157,8 @@ class Population:
         for _ in range(len(self.individuals)):
             index1 = random.randint(0, len(self.individuals) - 1)
             index2 = random.randint(0, len(self.individuals) - 1)
-            self.individuals.append(
-                self.individuals[index1].crossover(self.individuals[index2]))
+            self.individuals.append(self.individuals[index1].crossover(
+                self.individuals[index2]))
 
     def mutation(self, probability):
         for individual in self.individuals:
