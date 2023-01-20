@@ -38,7 +38,7 @@ for name in base_names:
     solutions.append(gpd.GeoDataFrame(communes_filtered, geometry='geometry'))
 
 print("Loading France map...")
-france = gpd.read_file('assets/georef-france-commune-millesime.shp')
+france = gpd.read_file('data/bzh_shapefile/georef-france-commune-millesime.shp')
 ax = france.plot(color='white', edgecolor='grey', figsize=(12, 6), alpha=0.2)
 
 print("Plotting solution...")
