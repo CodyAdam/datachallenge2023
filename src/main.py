@@ -21,8 +21,7 @@ population = Population(100,
 print("Starting evolution...")
 for i in range(5):
     population.next_generation()
-    print("Generation {:>2} - {:>2}: {:>10}".format(
-        i, str(population.best_individual)))
+    print("Generation {:>2} : {:>10}".format(i, str(population.best_individual)))
 
 print("Getting best solution...")
 best = population.best_individual

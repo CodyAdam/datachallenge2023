@@ -93,11 +93,19 @@ class Individual:
     # Display a solution showing the maximum distance between a node and its nearest base
     # The display also shows the average distance between a node and its nearest base
     def __str__(self) -> str:
-        if (self.max_dist_to_base is None or self.avg_dist_to_base is None
-                or self.max_node_to_base is None):
-            return "Valeur manquante"
+        s = f"fitness: {self.fitness};"
+        if self.max_node_to_base is None or self.avg_dist_to_base is None or self.nb_without_base is None:
+            if self.max_node_to_base is None:
+                s += "missing max_node_to_base;" 
+            if self.avg_dist_to_base is None:
+                s += "missing avg_dist_to_base;"
+            if self.nb_without_base is None:
+                s += "missing nb_without_base;"
+            return s
+        
         max_node, max_base = self.max_node_to_base
-        s = "La ville la moin bien desservie est: " + str(
+
+        s += "La ville la moin bien desservie est: " + str(
             max_node) + " en " + str(max_base) + "min"
         s += "La distance moyenne entre un noeud et sa base la plus proche est: " + str(
             self.avg_dist_to_base) + "\n"
@@ -127,9 +135,9 @@ class Population:
             for _ in range(pop_size)
         ]
         self.best_individual = None
-        self.best_fitness = -9999
+        self.best_fitness = float('-inf')
 
-    def update_fitness(self):
+    def call_update_fitness(self):
         for individual in self.individuals:
             individual.update_fitness()
             if individual.fitness > self.best_fitness:
@@ -141,7 +149,7 @@ class Population:
         self.individuals.sort(key=lambda x: x.fitness, reverse=True)
         self.individuals = self.individuals[:len(self.individuals) // 2]
 
-    def crossover(self):
+    def call_crossover(self):
         # crossover the best half of the population
         for _ in range(len(self.individuals)):
             index1 = random.randint(0, len(self.individuals) - 1)
@@ -154,29 +162,9 @@ class Population:
             individual.mutation(probability)
 
     def next_generation(self):
+        self.best_individual = None
+        self.best_fitness = float('-inf')
         self.selection()
-        self.crossover()
+        self.call_crossover()
         self.mutation(self.mutation_rate)
-        self.update_fitness()
-
-
-if __name__ == "__main__":
-    # nodes, vertexe, values, size, base_count, genes
-    nodes = ["1", "2", "3", "4", "5", "6"]
-    genes = [False, False, False, False, True, False]
-    vertexe = {}
-    vertexe["1"] = {"2": 7, "3": 9, "6": 14}
-    vertexe["2"] = {"1": 7, "3": 10, "4": 15}
-    vertexe["3"] = {"1": 9, "2": 10, "4": 11, "6": 2}
-    vertexe["4"] = {"2": 15, "3": 11, "5": 6}
-    vertexe["5"] = {"4": 6, "6": 9}
-    vertexe["6"] = {"1": 14, "3": 2, "5": 9}
-    values = {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1}
-    size = len(nodes)
-    base_count = 1
-
-    # create the individual
-    individual = Individual(nodes, vertexe, values, base_count, genes)
-    out = individual.nearest_base_and_dist("1")
-    individual.update_fitness()
-    print(individual.fitness)
+        self.call_update_fitness()
