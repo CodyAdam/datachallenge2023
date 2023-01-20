@@ -1,11 +1,6 @@
 from collections import defaultdict
 import pandas as pd
-from shapely.geometry import Point
-import geopandas as gpd
-from geopandas import GeoDataFrame
 import shapely.wkt
-import json
-import matplotlib.pyplot as plt
 
 
 def parse():
@@ -33,7 +28,7 @@ def parse():
     communes = communes.merge(lvls,
                               left_on='Code Officiel Commune',
                               right_on='code_insee_commune')
-    # communes = communes.head(100)
+    communes = communes.sample(20)
 
     # Convert the Geo Point column to a geometry column
     communes['geometry'] = communes['Geo Point'].apply(
@@ -44,7 +39,7 @@ def parse():
     for _, row in communes.iterrows():
         nodes.append(row['Nom Officiel Commune Majuscule'])
 
-    edges = defaultdict(dict[str, int])  # all the vertexes with their distance
+    edges = defaultdict(dict[str, int])  # all the edges with their distance
     for _, row in temps.iterrows():
         edges[row['depart']][row['destination']] = row['durée']
 
@@ -53,12 +48,12 @@ def parse():
 
 if __name__ == '__main__':
     print("Parsing data...")
-    communes, temps, nodes, vertexes, values = parse()
+    communes, temps, nodes, edges, values = parse()
     
     print(nodes[5])
 
-    for i,k in enumerate(vertexes):
-        print(k, vertexes[k])
+    for i,k in enumerate(edges):
+        print(k, edges[k])
         if i >= 1:
             break
 

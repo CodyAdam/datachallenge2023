@@ -1,6 +1,7 @@
 from collections import defaultdict
 import random
 import heapq
+import utils
 
 
 # format for a solution
@@ -13,17 +14,17 @@ class Individual:
         self.base_count = base_count
         self.genes = genes
         self.fitness = 0
+        self.max_dist_to_base = None
+        self.avg_dist_to_base = None
+        self.max_node_to_base = None
+        self.nb_without_base = None
 
         if self.genes is None:
-            self.genes = [False] * len(nodes)
+            self.genes = set()
             # randomly initialize the genes
-            # number of True is base_count
-            number_of_true = 0
-            while number_of_true < base_count:
+            while len(self.genes) == base_count:
                 index = random.randint(0, len(nodes) - 1)
-                if not self.genes[index]:
-                    self.genes[index] = True
-                    number_of_true += 1
+                self.genes.add(index)
 
     def copy(self):
         new = Individual(self.nodes, self.edges, self.values, self.base_count)
@@ -33,91 +34,76 @@ class Individual:
 
     def update_fitness(self):
         self.fitness = 0
-        nearest_bases = {}
-        dist_to_base = {}
         for node in self.nodes:
-            nearest_bases[node], dist_to_base[
-                node] = self.get_nearest_base_and_dist(node)
-        for node in dist_to_base:
-            if nearest_bases[node] is not None:
-                self.fitness += dist_to_base[node] * self.values[node]
+            base, base_dist = self.nearest_base_and_dist(node)
+            if base is not None:
+                self.fitness += base_dist * self.values[node]
+                self.avg_dist_to_base += base_dist
             else:
-                self.fitness += 30
+                self.fitness += float('infinity')
+                if self.nb_without_base is None:
+                    self.nb_without_base = 0
+                self.nb_without_base += 1
+        if self.avg_dist_to_base is not None:
+            self.avg_dist_to_base /= len(self.nodes)
         self.fitness = 100000 / self.fitness
 
-    def get_nearest_base_and_dist(self, node):
-        distances = self.dijkstra(node)
-        nearest_base = None
-        nearest_distance = float('infinity')
-        for i in range(len(self.nodes)):
-            node, is_base = self.nodes[i], self.genes[i]
-            if is_base and distances[node] < nearest_distance:
-                nearest_base = node
-                nearest_distance = distances[node]
-        return nearest_base, nearest_distance
+    def nearest_base_and_dist(self, node):
+        base = None
+        base_dist = float('infinity')
+        for current_base in self.genes:
+            if self.edges[node][current_base] < base_dist:
+                base = node
+                base_dist = self.edges[node][current_base]
 
-    def dijkstra(self, start):
-        nodes = self.nodes
-        distances = defaultdict(lambda: float('infinity'))
-        distances[start] = 0
-        queue = [(0, start)]
-        while queue:
-            current_distance, current_node = heapq.heappop(queue)
-            if current_distance > distances[current_node]:
-                continue
-            if current_node not in self.edges:
-                continue
-            for neighbor, weight in self.edges[current_node].items():
-                distance = current_distance + weight
-                if distance < 30 * 60 and distance < distances[neighbor]:
-                    distances[neighbor] = distance
-                    heapq.heappush(queue, (distance, neighbor))
-        return distances
+        if base and (self.max_dist_to_base is None
+                     or base_dist > self.max_dist_to_base):
+            self.max_dist_to_base = base_dist
+            self.max_node_to_base = (node, base)
+        return base, base_dist
 
     def mutation(self, probability):
-        nodes = self.nodes
-        # swap two genes randomly with probability
-        for _ in range(len(nodes)):
-            if random.random() < probability:
-                index1 = random.randint(0, len(nodes) - 1)
-                index2 = random.randint(0, len(nodes) - 1)
-                while index1 == index2:
-                    index2 = random.randint(0, len(nodes) - 1)
-                self.genes[index1], self.genes[index2] = self.genes[
-                    index2], self.genes[index1]
+        new_genes = self.genes.copy()
+        for gene in range(len(self.genes)):
+            while random.random() < probability:
+                if random.random() < 0.5:
+                    if gene != 0:
+                        gene -= 1
+                else:
+                    if gene != len(self.genes) - 1:
+                        gene += 1
+            new_genes.add(gene)
 
     def crossover(self, other):
-        nodes = self.nodes
-        # swap two genes randomly with probability
-        index = random.randint(0, len(nodes) - 1)
         new = self.copy()
-        new.genes = self.genes[:index] + other.genes[index:]
+        new.genes = self.genes.copy()
+        index = random.randint(0, len(self.nodes) - 1)
 
-        number_of_true = 0
-        for gene in new.genes:
-            if gene:
-                number_of_true += 1
+        genes1_list = list(self.genes)
+        genes2_list = list(other.genes)
+        new_genes_list = genes1_list[:index] + genes2_list[index:]
+        new.genes = set(new_genes_list)
 
-        while number_of_true != self.base_count:
-            index = random.randint(0, len(nodes) - 1)
-            if number_of_true > self.base_count:
-                if new.genes[index]:
-                    new.genes[index] = False
-                    number_of_true -= 1
-            else:
-                if not new.genes[index]:
-                    new.genes[index] = True
-                    number_of_true += 1
+        while len(new.genes) != self.base_count:
+            index = random.randint(0, len(self.nodes) - 1)
+            new.genes.add(index)
+
         return new
 
     # Display a solution showing the maximum distance between a node and its nearest base
     # The display also shows the average distance between a node and its nearest base
-    # def __str__() -> str:
-    #     distances = []
-    #     for node in self.nodes:
-    #         nearest_base, dist = self.get_nearest_base_and_dist(node)
-    #         distances.append(dist)
-    #     return f'Fitness: {self.fitness}, Max distance: {max(distances)}, Average distance: {sum(distances) / len(distances)}'
+    def __str__(self) -> str:
+        if (self.max_dist_to_base is None or self.avg_dist_to_base is None
+                or self.max_node_to_base is None):
+            return "Valeur manquante"
+        max_node, max_base = self.max_node_to_base
+        s = "La ville la moin bien desservie est: " + str(
+            max_node) + " en " + str(max_base) + "min"
+        s += "La distance moyenne entre un noeud et sa base la plus proche est: " + str(
+            self.avg_dist_to_base) + "\n"
+        s += "Il y a " + str(
+            self.nb_without_base) + " villes qui ne sont pas desservies"
+        return s
 
     # def get_nearest_base_and_dist() -> str:
     #     return ""
@@ -127,6 +113,9 @@ class Population:
 
     def __init__(self, pop_size, nodes, edges, values, base_count,
                  mutation_rate):
+        if len(nodes) < base_count:
+            raise Exception(
+                "The number of bases must be less than the number of nodes")
         self.pop_size = pop_size
         self.nodes = nodes
         self.edges = edges
@@ -188,6 +177,6 @@ if __name__ == "__main__":
 
     # create the individual
     individual = Individual(nodes, vertexe, values, base_count, genes)
-    out = individual.get_nearest_base_and_dist("1")
+    out = individual.nearest_base_and_dist("1")
     individual.update_fitness()
     print(individual.fitness)
