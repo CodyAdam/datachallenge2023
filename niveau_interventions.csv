@@ -1,0 +1,1209 @@
+code_insee_commune;Niveau d'activité clientèle;Niveau d'activité réseau
+22001;Bas;Bas
+22002;Bas;Haut
+22003;Bas;Très Bas
+22004;Très Haut;Très Haut
+22005;Moyen;Haut
+22006;Très Bas;Très Bas
+22008;Moyen;Bas
+22009;Très Bas;Très Bas
+22011;Moyen;Bas
+22012;Très Bas;Bas
+22013;Très Haut;Très Haut
+22014;Bas;Moyen
+22015;Haut;Haut
+22016;Moyen;Bas
+22018;Très Bas;Très Bas
+22019;Très Bas;Très Bas
+22020;Haut;Haut
+22021;Moyen;Bas
+22023;Bas;Bas
+22024;Très Bas;Très Bas
+22025;Haut;Haut
+22026;Très Bas;Très Bas
+22027;Très Bas;Bas
+22028;Très Bas;Moyen
+22029;Bas;Bas
+22030;Bas;Bas
+22031;Bas;Bas
+22032;Haut;Haut
+22033;Bas;Haut
+22034;Haut;Haut
+22035;Bas;Bas
+22036;Très Bas;Très Bas
+22037;Bas;Bas
+22039;Bas;Très Bas
+22040;Très Bas;Très Bas
+22041;Très Bas;Très Bas
+22042;Bas;Très Bas
+22043;Très Bas;Très Bas
+22044;Moyen;Moyen
+22045;Très Bas;Moyen
+22046;Très Haut;Très Haut
+22047;Moyen;Bas
+22048;Haut;Haut
+22049;Moyen;Moyen
+22050;Très Haut;Très Haut
+22052;Bas;Bas
+22053;Bas;Moyen
+22054;Très Haut;Très Haut
+22055;Très Haut;Très Haut
+22056;Moyen;Haut
+22057;Très Bas;Moyen
+22059;Moyen;Haut
+22060;Très Bas;Moyen
+22061;Haut;Moyen
+22062;Très Bas;Haut
+22063;Bas;Bas
+22064;Bas;Très Bas
+22065;Moyen;Haut
+22067;Moyen;Très Haut
+22068;Très Bas;Bas
+22069;Très Bas;Très Bas
+22070;Très Haut;Très Haut
+22071;Très Bas;Très Bas
+22072;Très Bas;Bas
+22073;Très Bas;Très Bas
+22074;Moyen;Moyen
+22075;Très Bas;Bas
+22076;Moyen;Bas
+22077;Moyen;Moyen
+22079;Moyen;Haut
+22081;Très Haut;Très Haut
+22082;Bas;Très Bas
+22083;Moyen;Bas
+22084;Haut;Haut
+22085;Très Bas;Très Bas
+22086;Bas;Très Bas
+22087;Moyen;Moyen
+22088;Très Bas;Très Bas
+22090;Très Bas;Moyen
+22091;Très Bas;Très Bas
+22092;Bas;Très Bas
+22093;Très Haut;Très Haut
+22094;Haut;Haut
+22096;Très Bas;Très Bas
+22097;Très Bas;Très Bas
+22098;Bas;Très Bas
+22099;Bas;Haut
+22101;Bas;Bas
+22103;Bas;Bas
+22104;Très Bas;Très Bas
+22105;Bas;Bas
+22106;Très Haut;Très Haut
+22107;Haut;Moyen
+22108;Très Bas;Très Bas
+22109;Très Bas;Très Bas
+22110;Très Bas;Bas
+22111;Bas;Bas
+22112;Très Bas;Très Bas
+22113;Très Haut;Très Haut
+22114;Bas;Bas
+22115;Bas;Moyen
+22116;Haut;Moyen
+22117;Haut;Moyen
+22118;Très Haut;Haut
+22119;Bas;Très Bas
+22121;Moyen;Moyen
+22122;Moyen;Moyen
+22124;Bas;Bas
+22126;Très Bas;Très Bas
+22127;Moyen;Haut
+22128;Bas;Bas
+22129;Très Bas;Très Bas
+22131;Haut;Moyen
+22132;Très Bas;Bas
+22133;Bas;Moyen
+22134;Haut;Haut
+22135;Haut;Haut
+22136;Très Haut;Très Haut
+22137;Haut;Moyen
+22138;Bas;Très Bas
+22139;Très Bas;Très Bas
+22140;Très Bas;Très Bas
+22141;Très Bas;Très Bas
+22143;Haut;Haut
+22144;Bas;Très Bas
+22145;Bas;Bas
+22146;Bas;Moyen
+22147;Haut;Haut
+22148;Très Bas;Très Bas
+22149;Bas;Bas
+22150;Très Bas;Bas
+22152;Moyen;Haut
+22153;Moyen;Très Bas
+22155;Moyen;Moyen
+22156;Bas;Bas
+22157;Moyen;Bas
+22158;Haut;Très Haut
+22160;Bas;Bas
+22161;Haut;Moyen
+22162;Très Haut;Très Haut
+22163;Moyen;Moyen
+22164;Haut;Haut
+22165;Bas;Très Bas
+22166;Haut;Très Haut
+22168;Très Haut;Très Haut
+22169;Bas;Très Bas
+22170;Moyen;Bas
+22171;Haut;Très Haut
+22172;Haut;Haut
+22174;Bas;Moyen
+22175;Moyen;Bas
+22176;Très Haut;Haut
+22177;Moyen;Haut
+22178;Bas;Moyen
+22179;Haut;Haut
+22180;Moyen;Moyen
+22181;Bas;Bas
+22182;Haut;Haut
+22183;Très Haut;Très Haut
+22184;Moyen;Haut
+22185;Haut;Haut
+22186;Très Haut;Très Haut
+22187;Très Haut;Très Haut
+22188;Moyen;Moyen
+22189;Bas;Bas
+22190;Haut;Haut
+22193;Moyen;Haut
+22194;Haut;Très Haut
+22195;Haut;Très Haut
+22196;Moyen;Haut
+22197;Haut;Haut
+22198;Très Haut;Très Haut
+22199;Moyen;Moyen
+22200;Très Bas;Très Bas
+22201;Haut;Moyen
+22202;Moyen;Moyen
+22203;Très Haut;Très Haut
+22204;Moyen;Moyen
+22205;Très Bas;Bas
+22206;Très Haut;Haut
+22207;Haut;Haut
+22208;Moyen;Haut
+22209;Très Haut;Très Haut
+22210;Haut;Très Haut
+22211;Haut;Très Haut
+22212;Bas;Moyen
+22213;Haut;Haut
+22214;Très Haut;Très Haut
+22215;Très Haut;Très Haut
+22216;Moyen;Moyen
+22217;Très Bas;Moyen
+22218;Haut;Haut
+22219;Haut;Haut
+22220;Haut;Moyen
+22221;Haut;Haut
+22222;Très Haut;Très Haut
+22223;Moyen;Haut
+22224;Moyen;Moyen
+22225;Haut;Haut
+22226;Haut;Haut
+22227;Moyen;Moyen
+22228;Moyen;Haut
+22229;Haut;Moyen
+22231;Bas;Haut
+22232;Haut;Très Haut
+22233;Haut;Haut
+22234;Bas;Haut
+22235;Très Bas;Très Bas
+22236;Bas;Très Bas
+22237;Haut;Moyen
+22238;Très Bas;Bas
+22239;Moyen;Moyen
+22240;Moyen;Bas
+22241;Moyen;Moyen
+22242;Moyen;Haut
+22243;Bas;Bas
+22244;Très Bas;Bas
+22245;Moyen;Moyen
+22246;Moyen;Moyen
+22248;Haut;Très Haut
+22249;Bas;Haut
+22250;Bas;Très Bas
+22251;Très Haut;Très Haut
+22254;Bas;Bas
+22255;Très Bas;Haut
+22256;Moyen;Très Haut
+22257;Très Bas;Bas
+22258;Très Haut;Haut
+22259;Haut;Très Haut
+22260;Bas;Bas
+22261;Très Bas;Très Bas
+22262;Haut;Moyen
+22263;Très Bas;Très Bas
+22264;Haut;Haut
+22265;Bas;Moyen
+22266;Très Haut;Très Haut
+22267;Très Bas;Très Bas
+22268;Bas;Bas
+22269;Très Bas;Très Bas
+22271;Très Bas;Très Bas
+22272;Haut;Haut
+22273;Haut;Moyen
+22274;Très Bas;Très Bas
+22275;Bas;Bas
+22276;Très Bas;Très Bas
+22277;Haut;Moyen
+22278;Très Haut;Très Haut
+22279;Moyen;Haut
+22280;Bas;Très Bas
+22281;Moyen;Moyen
+22282;Très Haut;Très Haut
+22283;Bas;Haut
+22284;Très Bas;Très Bas
+22285;Très Bas;Très Bas
+22286;Très Bas;Très Bas
+22287;Bas;Moyen
+22288;Bas;Bas
+22289;Très Bas;Très Bas
+22291;Très Bas;Bas
+22293;Très Bas;Moyen
+22294;Moyen;Moyen
+22295;Bas;Bas
+22296;Très Bas;Très Bas
+22299;Bas;Bas
+22300;Très Bas;Moyen
+22302;Haut;Moyen
+22304;Très Bas;Bas
+22305;Très Bas;Très Bas
+22306;Très Bas;Très Bas
+22307;Moyen;Bas
+22308;Très Bas;Très Bas
+22309;Très Bas;Très Bas
+22310;Très Bas;Moyen
+22311;Très Bas;Moyen
+22312;Très Bas;Très Bas
+22313;Bas;Très Bas
+22314;Très Bas;Très Bas
+22315;Très Bas;Très Bas
+22316;Très Bas;Moyen
+22317;Très Bas;Très Bas
+22318;Très Bas;Très Bas
+22319;Bas;Moyen
+22320;Très Bas;Très Bas
+22321;Haut;Haut
+22322;Très Bas;Très Bas
+22323;Bas;Bas
+22324;Moyen;Très Haut
+22325;Très Haut;Très Haut
+22326;Très Bas;Très Bas
+22327;Bas;Très Bas
+22328;Bas;Moyen
+22330;Très Bas;Très Bas
+22331;Très Bas;Très Bas
+22332;Très Bas;Très Bas
+22333;Moyen;Bas
+22334;Très Bas;Très Bas
+22335;Très Bas;Bas
+22337;Bas;Haut
+22338;Bas;Très Bas
+22339;Haut;Très Haut
+22340;Bas;Bas
+22341;Très Bas;Très Bas
+22342;Très Bas;Très Bas
+22343;Très Haut;Très Haut
+22344;Bas;Bas
+22345;Bas;Bas
+22346;Bas;Bas
+22347;Bas;Haut
+22348;Très Bas;Très Bas
+22349;Haut;Haut
+22350;Très Bas;Bas
+22351;Très Bas;Très Bas
+22352;Très Bas;Très Bas
+22353;Très Haut;Très Haut
+22354;Moyen;Bas
+22356;Bas;Bas
+22358;Très Bas;Très Bas
+22359;Bas;Bas
+22360;Très Haut;Très Haut
+22361;Très Bas;Très Bas
+22362;Haut;Haut
+22363;Moyen;Moyen
+22364;Haut;Moyen
+22365;Très Bas;Moyen
+22366;Très Bas;Bas
+22368;Très Bas;Très Bas
+22369;Très Bas;Bas
+22370;Très Bas;Très Bas
+22371;Bas;Moyen
+22372;Haut;Moyen
+22373;Très Bas;Très Bas
+22375;Bas;Très Bas
+22376;Moyen;Haut
+22377;Bas;Moyen
+22378;Très Bas;Très Bas
+22379;Haut;Haut
+22380;Bas;Bas
+22381;Très Bas;Très Bas
+22383;Très Bas;Très Bas
+22384;Moyen;Moyen
+22385;Moyen;Bas
+22386;Très Bas;Très Bas
+22387;Moyen;Haut
+22388;Haut;Bas
+22389;Très Haut;Très Haut
+22390;Bas;Moyen
+22391;Moyen;Moyen
+29001;Moyen;Haut
+29002;Moyen;Haut
+29003;Très Haut;Très Haut
+29004;Très Haut;Très Haut
+29005;Bas;Bas
+29006;Très Haut;Très Haut
+29007;Haut;Moyen
+29008;Moyen;Haut
+29010;Moyen;Moyen
+29011;Moyen;Haut
+29012;Très Bas;Très Bas
+29013;Bas;Très Bas
+29014;Bas;Bas
+29015;Haut;Haut
+29016;Haut;Moyen
+29017;Très Bas;Bas
+29018;Bas;Bas
+29019;Très Haut;Très Haut
+29020;Haut;Très Haut
+29021;Très Haut;Haut
+29022;Très Haut;Très Haut
+29023;Très Haut;Très Haut
+29024;Très Haut;Très Haut
+29025;Moyen;Haut
+29026;Très Haut;Très Haut
+29027;Très Haut;Très Haut
+29028;Moyen;Haut
+29029;Moyen;Moyen
+29030;Très Haut;Très Haut
+29031;Très Haut;Très Haut
+29032;Haut;Haut
+29033;Très Bas;Bas
+29034;Bas;Bas
+29035;Très Bas;Très Bas
+29036;Moyen;Moyen
+29037;Très Haut;Très Haut
+29038;Moyen;Moyen
+29039;Très Haut;Très Haut
+29040;Très Haut;Haut
+29041;Moyen;Moyen
+29042;Très Haut;Très Haut
+29043;Haut;Haut
+29044;Moyen;Moyen
+29045;Haut;Haut
+29046;Très Haut;Très Haut
+29047;Moyen;Moyen
+29048;Moyen;Haut
+29049;Haut;Très Haut
+29051;Très Haut;Très Haut
+29053;Haut;Très Haut
+29054;Bas;Bas
+29055;Haut;Moyen
+29056;Moyen;Moyen
+29057;Très Haut;Très Haut
+29058;Très Haut;Très Haut
+29059;Moyen;Bas
+29060;Haut;Très Haut
+29061;Très Haut;Très Haut
+29062;Bas;Moyen
+29063;Très Bas;Moyen
+29064;Très Bas;Très Bas
+29065;Bas;Bas
+29066;Moyen;Haut
+29067;Haut;Moyen
+29068;Haut;Très Haut
+29069;Très Haut;Très Haut
+29070;Très Bas;Bas
+29071;Bas;Moyen
+29072;Haut;Très Haut
+29073;Moyen;Moyen
+29074;Moyen;Très Bas
+29075;Très Haut;Très Haut
+29076;Très Haut;Haut
+29077;Haut;Très Haut
+29078;Haut;Haut
+29079;Moyen;Bas
+29080;Haut;Bas
+29081;Très Haut;Haut
+29082;Moyen;Très Bas
+29083;Bas;Haut
+29084;Très Bas;Haut
+29085;Haut;Bas
+29086;Bas;Moyen
+29087;Très Bas;Bas
+29089;Bas;Bas
+29090;Très Bas;Très Bas
+29091;Très Haut;Très Haut
+29093;Moyen;Bas
+29094;Très Bas;Très Bas
+29095;Bas;Moyen
+29097;Haut;Haut
+29098;Haut;Haut
+29099;Bas;Bas
+29100;Très Bas;Très Bas
+29101;Très Haut;Très Haut
+29102;Haut;Moyen
+29103;Très Haut;Très Haut
+29104;Très Bas;Bas
+29105;Très Haut;Très Haut
+29106;Bas;Moyen
+29107;Bas;Bas
+29108;Bas;Moyen
+29109;Haut;Haut
+29110;Très Bas;Bas
+29111;Moyen;Haut
+29112;Moyen;Moyen
+29113;Haut;Moyen
+29114;Bas;Très Bas
+29115;Très Bas;Très Bas
+29116;Très Bas;Très Bas
+29117;Très Haut;Très Haut
+29119;Moyen;Bas
+29120;Haut;Haut
+29122;Bas;Moyen
+29123;Moyen;Moyen
+29124;Très Haut;Très Haut
+29125;Bas;Moyen
+29126;Très Bas;Très Bas
+29128;Très Bas;Très Bas
+29130;Très Haut;Très Haut
+29131;Très Bas;Très Bas
+29132;Très Bas;Très Bas
+29133;Haut;Haut
+29134;Bas;Bas
+29135;Très Haut;Très Haut
+29136;Moyen;Moyen
+29137;Moyen;Moyen
+29139;Bas;Bas
+29140;Haut;Très Haut
+29141;Bas;Moyen
+29142;Très Bas;Moyen
+29143;Bas;Moyen
+29144;Bas;Bas
+29145;Bas;Bas
+29146;Haut;Très Haut
+29147;Haut;Haut
+29148;Moyen;Moyen
+29150;Très Haut;Très Haut
+29151;Très Haut;Très Haut
+29152;Moyen;Moyen
+29153;Très Haut;Très Haut
+29155;Bas;Très Haut
+29156;Moyen;Bas
+29158;Très Haut;Très Haut
+29159;Bas;Moyen
+29160;Très Haut;Très Haut
+29161;Très Haut;Haut
+29162;Haut;Très Haut
+29163;Haut;Très Haut
+29165;Très Haut;Très Haut
+29166;Très Bas;Bas
+29167;Moyen;Haut
+29168;Haut;Moyen
+29169;Haut;Très Haut
+29170;Très Haut;Très Haut
+29171;Très Haut;Très Haut
+29172;Haut;Haut
+29173;Moyen;Haut
+29174;Très Haut;Très Haut
+29175;Haut;Très Haut
+29176;Haut;Haut
+29177;Très Haut;Très Haut
+29178;Très Haut;Très Haut
+29179;Haut;Très Haut
+29180;Moyen;Haut
+29181;Haut;Très Haut
+29182;Moyen;Très Bas
+29183;Bas;Bas
+29184;Haut;Très Haut
+29185;Très Haut;Très Haut
+29186;Haut;Moyen
+29187;Bas;Bas
+29188;Très Haut;Très Haut
+29189;Très Haut;Très Haut
+29190;Très Haut;Très Haut
+29191;Très Haut;Haut
+29192;Moyen;Haut
+29193;Moyen;Moyen
+29195;Très Haut;Très Haut
+29196;Haut;Haut
+29197;Très Haut;Très Haut
+29198;Moyen;Moyen
+29199;Très Haut;Très Haut
+29201;Moyen;Haut
+29202;Haut;Haut
+29204;Moyen;Moyen
+29205;Bas;Moyen
+29206;Haut;Très Haut
+29207;Haut;Très Haut
+29208;Bas;Moyen
+29209;Haut;Très Haut
+29210;Haut;Haut
+29211;Bas;Moyen
+29212;Très Haut;Très Haut
+29213;Haut;Haut
+29214;Bas;Moyen
+29215;Haut;Très Haut
+29216;Très Haut;Très Haut
+29217;Haut;Très Haut
+29218;Haut;Haut
+29220;Très Haut;Très Haut
+29221;Haut;Haut
+29222;Très Bas;Très Bas
+29224;Bas;Moyen
+29225;Haut;Très Haut
+29226;Moyen;Moyen
+29227;Haut;Haut
+29228;Bas;Très Bas
+29229;Moyen;Bas
+29230;Haut;Très Haut
+29232;Très Haut;Très Haut
+29233;Très Haut;Très Haut
+29234;Haut;Haut
+29235;Très Haut;Très Haut
+29236;Très Haut;Très Haut
+29237;Moyen;Moyen
+29238;Moyen;Moyen
+29239;Très Haut;Haut
+29240;Bas;Moyen
+29241;Très Haut;Très Haut
+29243;Très Bas;Bas
+29244;Très Bas;Très Bas
+29245;Moyen;Bas
+29246;Très Bas;Très Bas
+29247;Haut;Très Haut
+29248;Bas;Moyen
+29249;Bas;Haut
+29250;Moyen;Bas
+29251;Bas;Bas
+29252;Moyen;Moyen
+29254;Très Haut;Très Haut
+29255;Bas;Très Bas
+29256;Moyen;Moyen
+29257;Haut;Haut
+29259;Très Haut;Très Haut
+29260;Très Haut;Très Haut
+29261;Bas;Très Bas
+29262;Moyen;Bas
+29263;Bas;Bas
+29264;Très Bas;Bas
+29265;Moyen;Bas
+29266;Très Haut;Haut
+29267;Bas;Haut
+29268;Moyen;Bas
+29269;Bas;Moyen
+29270;Moyen;Moyen
+29271;Moyen;Haut
+29272;Très Haut;Haut
+29273;Très Haut;Haut
+29274;Très Haut;Très Haut
+29275;Haut;Haut
+29276;Moyen;Bas
+29277;Haut;Haut
+29278;Haut;Très Haut
+29279;Haut;Haut
+29280;Haut;Haut
+29281;Bas;Moyen
+29282;Très Bas;Très Bas
+29284;Haut;Haut
+29285;Bas;Bas
+29286;Très Bas;Très Bas
+29287;Moyen;Bas
+29288;Très Bas;Très Bas
+29289;Très Bas;Bas
+29290;Très Bas;Haut
+29291;Bas;Bas
+29292;Bas;Bas
+29293;Très Haut;Très Haut
+29294;Très Bas;Bas
+29295;Très Bas;Très Bas
+29296;Bas;Moyen
+29297;Moyen;Moyen
+29298;Très Bas;Bas
+29299;Très Bas;Très Bas
+29300;Bas;Moyen
+29301;Très Bas;Très Bas
+29302;Haut;Haut
+35001;Très Haut;Très Haut
+35002;Moyen;Haut
+35003;Bas;Très Bas
+35004;Très Haut;Haut
+35005;Très Bas;Très Bas
+35006;Haut;Haut
+35007;Très Bas;Très Bas
+35008;Très Bas;Très Bas
+35009;Moyen;Moyen
+35010;Moyen;Haut
+35012;Très Haut;Très Haut
+35013;Très Haut;Haut
+35014;Moyen;Haut
+35015;Haut;Haut
+35016;Haut;Moyen
+35017;Moyen;Très Bas
+35018;Bas;Haut
+35019;Haut;Haut
+35021;Très Bas;Bas
+35022;Moyen;Très Bas
+35023;Très Haut;Haut
+35024;Très Haut;Très Haut
+35025;Très Bas;Très Bas
+35026;Très Bas;Très Bas
+35027;Bas;Bas
+35028;Bas;Très Bas
+35029;Moyen;Bas
+35030;Bas;Très Bas
+35031;Haut;Très Haut
+35032;Haut;Haut
+35033;Haut;Haut
+35034;Haut;Moyen
+35035;Bas;Très Bas
+35037;Très Haut;Très Haut
+35038;Très Bas;Très Bas
+35039;Moyen;Moyen
+35040;Moyen;Moyen
+35041;Bas;Bas
+35042;Très Bas;Très Bas
+35044;Très Bas;Très Bas
+35045;Bas;Bas
+35046;Bas;Très Bas
+35047;Très Haut;Très Haut
+35049;Très Haut;Très Haut
+35050;Bas;Moyen
+35051;Très Haut;Très Haut
+35052;Très Bas;Très Bas
+35054;Moyen;Bas
+35055;Très Haut;Très Haut
+35056;Bas;Très Bas
+35057;Moyen;Moyen
+35058;Très Bas;Très Bas
+35059;Très Haut;Très Haut
+35060;Très Bas;Très Bas
+35061;Très Bas;Très Bas
+35062;Bas;Moyen
+35063;Très Bas;Très Bas
+35064;Moyen;Bas
+35065;Moyen;Bas
+35066;Très Haut;Très Haut
+35067;Moyen;Bas
+35068;Très Haut;Haut
+35069;Très Haut;Très Haut
+35070;Bas;Très Bas
+35071;Très Bas;Très Bas
+35072;Haut;Moyen
+35075;Bas;Très Bas
+35076;Très Haut;Haut
+35077;Très Bas;Bas
+35078;Haut;Moyen
+35079;Moyen;Moyen
+35080;Moyen;Moyen
+35081;Très Bas;Bas
+35082;Moyen;Moyen
+35084;Moyen;Très Bas
+35085;Très Haut;Très Haut
+35086;Très Bas;Très Bas
+35087;Très Bas;Bas
+35088;Haut;Haut
+35089;Très Bas;Moyen
+35090;Haut;Moyen
+35091;Bas;Très Bas
+35092;Bas;Bas
+35093;Très Haut;Très Haut
+35094;Bas;Moyen
+35095;Très Haut;Très Haut
+35096;Moyen;Moyen
+35097;Bas;Moyen
+35098;Bas;Moyen
+35099;Haut;Moyen
+35101;Bas;Bas
+35102;Très Bas;Bas
+35103;Très Bas;Bas
+35104;Bas;Moyen
+35105;Bas;Moyen
+35106;Haut;Moyen
+35107;Moyen;Bas
+35108;Moyen;Moyen
+35109;Haut;Haut
+35110;Bas;Très Bas
+35111;Très Bas;Bas
+35112;Très Bas;Bas
+35114;Très Bas;Très Bas
+35115;Très Haut;Très Haut
+35116;Haut;Moyen
+35117;Moyen;Moyen
+35118;Moyen;Bas
+35119;Très Bas;Bas
+35120;Très Haut;Haut
+35121;Moyen;Bas
+35122;Haut;Moyen
+35123;Haut;Haut
+35124;Haut;Haut
+35125;Haut;Haut
+35126;Très Haut;Très Haut
+35127;Très Haut;Haut
+35128;Bas;Bas
+35130;Haut;Haut
+35131;Haut;Haut
+35132;Moyen;Très Bas
+35133;Haut;Très Haut
+35134;Très Bas;Très Bas
+35135;Moyen;Bas
+35136;Très Haut;Très Haut
+35137;Bas;Moyen
+35138;Très Bas;Bas
+35139;Très Haut;Moyen
+35140;Très Bas;Bas
+35141;Bas;Très Bas
+35142;Bas;Moyen
+35143;Bas;Très Bas
+35144;Très Bas;Très Bas
+35145;Haut;Bas
+35146;Très Bas;Très Bas
+35148;Très Bas;Très Bas
+35149;Moyen;Bas
+35150;Très Haut;Haut
+35151;Moyen;Bas
+35152;Très Haut;Très Haut
+35153;Très Bas;Très Bas
+35154;Bas;Moyen
+35155;Très Bas;Bas
+35156;Bas;Très Bas
+35157;Bas;Très Bas
+35159;Très Bas;Très Bas
+35160;Très Bas;Très Bas
+35161;Moyen;Moyen
+35162;Haut;Haut
+35163;Moyen;Moyen
+35164;Très Bas;Bas
+35165;Moyen;Moyen
+35166;Très Bas;Bas
+35167;Haut;Haut
+35168;Haut;Très Haut
+35169;Haut;Moyen
+35170;Très Bas;Très Bas
+35171;Haut;Moyen
+35172;Moyen;Moyen
+35173;Très Haut;Très Haut
+35174;Bas;Très Bas
+35175;Bas;Très Bas
+35176;Très Haut;Très Haut
+35177;Haut;Haut
+35178;Moyen;Bas
+35179;Très Haut;Très Haut
+35180;Bas;Très Bas
+35181;Moyen;Bas
+35183;Très Bas;Très Bas
+35184;Très Haut;Haut
+35185;Très Bas;Très Bas
+35186;Moyen;Bas
+35187;Moyen;Moyen
+35188;Très Haut;Très Haut
+35189;Haut;Haut
+35190;Très Bas;Très Bas
+35191;Moyen;Moyen
+35192;Très Bas;Très Bas
+35193;Haut;Moyen
+35194;Très Bas;Très Bas
+35195;Haut;Moyen
+35196;Très Haut;Très Haut
+35197;Moyen;Très Bas
+35198;Bas;Bas
+35199;Bas;Très Bas
+35200;Bas;Bas
+35201;Bas;Bas
+35202;Bas;Bas
+35203;Très Bas;Très Bas
+35204;Haut;Moyen
+35205;Très Bas;Très Bas
+35206;Très Haut;Très Haut
+35207;Haut;Très Haut
+35208;Haut;Haut
+35210;Très Haut;Très Haut
+35211;Haut;Haut
+35212;Moyen;Bas
+35214;Très Bas;Très Bas
+35215;Bas;Moyen
+35216;Bas;Très Bas
+35217;Bas;Très Bas
+35218;Très Bas;Très Bas
+35219;Haut;Haut
+35220;Haut;Haut
+35221;Très Haut;Haut
+35222;Haut;Haut
+35223;Très Haut;Très Haut
+35224;Haut;Moyen
+35225;Très Bas;Très Bas
+35226;Haut;Moyen
+35227;Moyen;Moyen
+35228;Très Haut;Très Haut
+35229;Bas;Bas
+35230;Bas;Bas
+35231;Bas;Très Bas
+35232;Très Bas;Très Bas
+35233;Bas;Bas
+35234;Bas;Moyen
+35235;Bas;Bas
+35236;Très Haut;Très Haut
+35237;Moyen;Moyen
+35238;Très Haut;Très Haut
+35239;Haut;Très Haut
+35240;Très Haut;Très Haut
+35241;Haut;Moyen
+35242;Très Bas;Très Bas
+35243;Moyen;Haut
+35244;Très Bas;Très Bas
+35245;Très Haut;Haut
+35246;Moyen;Moyen
+35247;Moyen;Très Bas
+35248;Bas;Très Bas
+35249;Bas;Bas
+35250;Haut;Bas
+35251;Haut;Haut
+35252;Très Bas;Bas
+35253;Très Haut;Haut
+35255;Bas;Très Bas
+35256;Très Haut;Haut
+35257;Très Haut;Très Haut
+35258;Très Bas;Bas
+35259;Moyen;Moyen
+35260;Bas;Très Bas
+35261;Très Bas;Très Bas
+35262;Bas;Très Bas
+35263;Haut;Haut
+35264;Bas;Moyen
+35265;Haut;Moyen
+35266;Haut;Moyen
+35268;Bas;Très Bas
+35270;Très Bas;Très Bas
+35271;Moyen;Moyen
+35272;Très Bas;Très Bas
+35273;Haut;Haut
+35274;Bas;Très Bas
+35275;Très Haut;Très Haut
+35276;Très Bas;Très Bas
+35277;Très Bas;Très Bas
+35278;Très Haut;Très Haut
+35279;Haut;Bas
+35280;Bas;Bas
+35281;Très Haut;Très Haut
+35282;Haut;Moyen
+35283;Bas;Très Bas
+35284;Haut;Haut
+35285;Moyen;Moyen
+35286;Bas;Très Bas
+35287;Très Haut;Très Haut
+35288;Très Haut;Très Haut
+35289;Bas;Bas
+35290;Très Bas;Très Bas
+35291;Très Bas;Très Bas
+35292;Moyen;Moyen
+35294;Haut;Moyen
+35295;Très Bas;Très Bas
+35296;Bas;Bas
+35297;Très Haut;Haut
+35299;Très Haut;Très Haut
+35300;Moyen;Bas
+35302;Bas;Moyen
+35304;Bas;Bas
+35305;Bas;Très Bas
+35306;Haut;Haut
+35307;Bas;Bas
+35308;Très Haut;Haut
+35309;Bas;Très Bas
+35310;Très Bas;Bas
+35311;Très Bas;Très Bas
+35312;Haut;Bas
+35314;Moyen;Bas
+35315;Bas;Très Bas
+35316;Très Bas;Bas
+35317;Très Bas;Bas
+35318;Bas;Très Bas
+35319;Haut;Moyen
+35320;Très Bas;Moyen
+35321;Moyen;Bas
+35322;Bas;Très Bas
+35324;Très Bas;Très Bas
+35325;Très Bas;Très Bas
+35326;Moyen;Moyen
+35327;Haut;Haut
+35328;Haut;Moyen
+35329;Bas;Moyen
+35330;Très Bas;Très Bas
+35331;Haut;Moyen
+35332;Moyen;Bas
+35333;Bas;Moyen
+35334;Très Haut;Haut
+35335;Bas;Moyen
+35336;Très Bas;Très Bas
+35337;Très Haut;Haut
+35338;Bas;Bas
+35339;Moyen;Bas
+35340;Moyen;Moyen
+35342;Très Bas;Très Bas
+35343;Bas;Bas
+35345;Bas;Très Bas
+35346;Très Bas;Très Bas
+35347;Haut;Moyen
+35350;Très Bas;Très Bas
+35351;Moyen;Bas
+35352;Très Haut;Très Haut
+35353;Très Haut;Très Haut
+35354;Très Bas;Très Bas
+35355;Moyen;Moyen
+35356;Moyen;Moyen
+35357;Très Bas;Très Bas
+35358;Moyen;Bas
+35359;Bas;Bas
+35360;Très Haut;Très Haut
+35361;Bas;Très Bas
+35362;Moyen;Bas
+35363;Haut;Moyen
+44185;Très Haut;Haut
+56001;Haut;Haut
+56002;Haut;Haut
+56003;Très Haut;Très Haut
+56004;Haut;Haut
+56005;Très Haut;Très Haut
+56006;Moyen;Bas
+56007;Très Haut;Très Haut
+56008;Très Haut;Très Haut
+56009;Haut;Haut
+56010;Très Haut;Très Haut
+56011;Haut;Moyen
+56012;Bas;Bas
+56013;Très Haut;Très Haut
+56014;Moyen;Moyen
+56015;Moyen;Bas
+56017;Haut;Très Haut
+56018;Moyen;Moyen
+56019;Très Bas;Très Bas
+56020;Bas;Bas
+56021;Moyen;Moyen
+56022;Moyen;Moyen
+56023;Très Haut;Très Haut
+56024;Moyen;Haut
+56025;Très Bas;Très Bas
+56026;Très Haut;Haut
+56027;Très Bas;Bas
+56028;Moyen;Moyen
+56029;Bas;Bas
+56030;Haut;Moyen
+56031;Très Haut;Très Haut
+56032;Moyen;Moyen
+56033;Très Haut;Haut
+56034;Très Haut;Très Haut
+56035;Moyen;Bas
+56036;Très Haut;Très Haut
+56039;Bas;Moyen
+56040;Haut;Haut
+56041;Haut;Haut
+56042;Haut;Haut
+56043;Moyen;Bas
+56044;Bas;Très Bas
+56045;Très Bas;Très Bas
+56046;Très Haut;Très Haut
+56047;Bas;Haut
+56048;Bas;Bas
+56049;Très Bas;Très Bas
+56050;Très Bas;Très Bas
+56051;Bas;Bas
+56052;Très Haut;Haut
+56053;Très Haut;Très Haut
+56054;Très Haut;Très Haut
+56055;Très Haut;Haut
+56056;Très Bas;Très Bas
+56057;Très Haut;Très Haut
+56058;Très Haut;Très Haut
+56060;Bas;Bas
+56061;Très Haut;Haut
+56062;Bas;Moyen
+56063;Haut;Bas
+56065;Très Bas;Très Bas
+56066;Très Haut;Très Haut
+56067;Très Haut;Très Haut
+56068;Très Bas;Très Bas
+56069;Très Haut;Très Haut
+56070;Haut;Haut
+56071;Bas;Bas
+56072;Très Bas;Moyen
+56073;Haut;Moyen
+56074;Moyen;Haut
+56075;Très Haut;Très Haut
+56076;Moyen;Haut
+56077;Bas;Moyen
+56078;Très Haut;Très Haut
+56079;Moyen;Moyen
+56080;Haut;Haut
+56081;Très Haut;Très Haut
+56082;Très Bas;Très Bas
+56083;Très Haut;Très Haut
+56084;Bas;Bas
+56085;Très Bas;Très Bas
+56086;Très Bas;Très Bas
+56087;Très Haut;Moyen
+56088;Bas;Bas
+56089;Haut;Haut
+56090;Très Haut;Très Haut
+56091;Haut;Haut
+56092;Très Bas;Bas
+56093;Bas;Moyen
+56094;Très Haut;Très Haut
+56096;Haut;Haut
+56097;Haut;Haut
+56098;Très Haut;Très Haut
+56099;Très Bas;Bas
+56100;Haut;Haut
+56101;Très Haut;Très Haut
+56102;Haut;Haut
+56103;Très Bas;Très Bas
+56104;Bas;Très Bas
+56105;Moyen;Haut
+56106;Haut;Moyen
+56107;Très Haut;Très Haut
+56108;Moyen;Bas
+56109;Moyen;Moyen
+56110;Moyen;Moyen
+56111;Moyen;Moyen
+56112;Bas;Bas
+56113;Moyen;Haut
+56114;Haut;Haut
+56115;Haut;Bas
+56116;Très Haut;Haut
+56117;Très Haut;Haut
+56118;Haut;Haut
+56119;Très Haut;Très Haut
+56120;Haut;Haut
+56121;Très Haut;Très Haut
+56122;Haut;Moyen
+56123;Haut;Haut
+56124;Haut;Haut
+56125;Moyen;Bas
+56126;Très Haut;Très Haut
+56127;Très Haut;Haut
+56128;Haut;Haut
+56129;Haut;Haut
+56130;Moyen;Moyen
+56131;Moyen;Haut
+56132;Moyen;Bas
+56133;Bas;Bas
+56134;Moyen;Haut
+56135;Bas;Moyen
+56136;Bas;Bas
+56137;Haut;Moyen
+56139;Très Bas;Très Bas
+56140;Très Haut;Haut
+56141;Haut;Moyen
+56143;Très Haut;Très Haut
+56144;Très Haut;Haut
+56145;Bas;Bas
+56146;Moyen;Haut
+56147;Très Haut;Très Haut
+56148;Haut;Bas
+56149;Haut;Très Haut
+56151;Très Haut;Très Haut
+56152;Très Haut;Très Haut
+56153;Très Haut;Très Haut
+56154;Moyen;Moyen
+56155;Très Haut;Très Haut
+56156;Très Bas;Bas
+56157;Haut;Haut
+56158;Très Haut;Très Haut
+56159;Haut;Moyen
+56160;Bas;Bas
+56161;Haut;Très Haut
+56162;Très Haut;Très Haut
+56163;Moyen;Haut
+56164;Très Haut;Très Haut
+56165;Très Haut;Très Haut
+56166;Très Haut;Très Haut
+56167;Très Haut;Haut
+56168;Très Haut;Haut
+56169;Très Haut;Très Haut
+56170;Moyen;Moyen
+56171;Moyen;Bas
+56172;Haut;Haut
+56173;Très Haut;Très Haut
+56174;Haut;Haut
+56175;Très Haut;Haut
+56176;Très Haut;Très Haut
+56177;Très Haut;Très Haut
+56178;Très Haut;Très Haut
+56179;Haut;Haut
+56180;Très Bas;Très Bas
+56181;Très Haut;Haut
+56182;Moyen;Haut
+56184;Très Haut;Très Haut
+56185;Très Haut;Très Haut
+56186;Très Haut;Très Haut
+56188;Haut;Moyen
+56189;Moyen;Bas
+56190;Moyen;Moyen
+56191;Très Bas;Très Bas
+56193;Très Haut;Très Haut
+56194;Haut;Haut
+56195;Bas;Bas
+56196;Très Bas;Très Bas
+56197;Haut;Moyen
+56198;Haut;Moyen
+56199;Moyen;Bas
+56200;Moyen;Moyen
+56201;Moyen;Moyen
+56202;Bas;Bas
+56203;Bas;Haut
+56204;Très Bas;Bas
+56205;Haut;Bas
+56206;Très Haut;Très Haut
+56207;Moyen;Haut
+56208;Très Bas;Très Bas
+56209;Très Bas;Très Bas
+56210;Très Bas;Bas
+56211;Bas;Bas
+56212;Haut;Haut
+56213;Bas;Moyen
+56214;Très Haut;Très Haut
+56215;Bas;Bas
+56216;Très Bas;Très Bas
+56218;Bas;Moyen
+56219;Moyen;Moyen
+56220;Moyen;Bas
+56221;Moyen;Bas
+56222;Haut;Haut
+56223;Moyen;Bas
+56224;Très Bas;Très Bas
+56225;Très Bas;Très Bas
+56226;Très Bas;Très Bas
+56227;Bas;Très Bas
+56228;Moyen;Bas
+56229;Moyen;Moyen
+56230;Très Bas;Bas
+56231;Haut;Haut
+56232;Bas;Bas
+56233;Haut;Haut
+56234;Très Haut;Très Haut
+56236;Moyen;Bas
+56237;Moyen;Moyen
+56238;Très Bas;Bas
+56239;Moyen;Moyen
+56240;Très Haut;Très Haut
+56241;Moyen;Haut
+56242;Bas;Moyen
+56243;Très Haut;Très Haut
+56244;Haut;Haut
+56245;Très Bas;Bas
+56246;Moyen;Haut
+56247;Très Haut;Haut
+56248;Très Haut;Très Haut
+56249;Haut;Moyen
+56250;Bas;Bas
+56251;Très Haut;Très Haut
+56252;Haut;Haut
+56253;Bas;Très Bas
+56254;Moyen;Moyen
+56255;Haut;Moyen
+56256;Très Bas;Très Bas
+56257;Bas;Bas
+56258;Haut;Haut
+56259;Moyen;Bas
+56260;Très Haut;Très Haut
+56261;Haut;Moyen
+56262;Haut;Haut
+56263;Très Haut;Haut
+56264;Très Bas;Bas
