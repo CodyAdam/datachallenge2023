@@ -23,7 +23,9 @@ base = 5
 base = 100
 base = 75
 base = 25
-population = Population(30,
+base = 30
+base = 40
+population = Population(50,
                         nodes,
                         edges,
                         values,
@@ -50,5 +52,6 @@ for i in range(1000):
                           fig,
                           figax,
                           gdf,
-                          pause=2,
+                          pause=0.01,
                           base=base)
+

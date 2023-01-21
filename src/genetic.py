@@ -7,7 +7,12 @@ import utils
 # format for a solution
 class Individual:
 
-    def __init__(self, nodes, edges, values, base_count, genes=None):
+    def __init__(self,
+                 nodes: list,
+                 edges: dict[str, dict[str, int]],
+                 values: dict,
+                 base_count: int,
+                 genes=None):
         self.nodes = nodes
         self.edges = edges
         self.values = values
@@ -65,8 +70,21 @@ class Individual:
         new_genes = set()
         for gene in (self.genes):
             new_gene = gene
-            if random.random() < probability:
-                new_gene = random.randint(0, len(self.nodes) - 1)
+            current_probability = probability
+            for other in self.edges[gene]:
+                if other in self.genes:
+                    current_probability *= 5
+
+            while random.random() < min(0.9, current_probability):
+                # gene move to a random neighbour (in self.edges[gene])
+                random_neighbour = random.choice(
+                    list(self.edges[self.nodes[gene]].keys()))
+                new_gene = self.nodes.index(random_neighbour)
+
+                for other in self.edges[gene]:
+                    if other in self.genes:
+                        current_probability = 7 * probability
+
             new_genes.add(new_gene)
         while len(new_genes) < self.base_count:
             new_genes.add(random.randint(0, len(self.nodes) - 1))
@@ -125,28 +143,28 @@ class Population:
                 self.best_fitness = individual.fitness
                 self.best_individual = individual
 
-
     def call_crossover(self):
         new_individuals = [self.best_individual]
         # select two parents but more likely to select the best ones
-        for _ in range(self.pop_size-1):
+        for _ in range(self.pop_size - 1):
             parent1 = self.select_parent()
             parent2 = self.select_parent()
             while parent1 == parent2:
                 parent2 = self.select_parent()
             new_individuals.append(parent1.crossover(parent2))
-    
+
     def select_parent(self):
         # select randomly an individual but more likely to select the best ones
-        fitness_sum = sum([ind.fitness for ind in self.individuals])
+        # sort individuals by fitness
+        self.individuals.sort(key=lambda x: x.fitness, reverse=True)
+        half = self.pop_size // 2
+        fitness_sum = sum([ind.fitness for ind in self.individuals[:half]])
         pick = random.uniform(0, fitness_sum)
         current = 0
-        for ind in self.individuals:
+        for ind in self.individuals[:half]:
             current += ind.fitness
             if current > pick:
                 return ind
-        
-
 
     def mutation(self, probability):
         for individual in self.individuals:
