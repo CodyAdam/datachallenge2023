@@ -19,18 +19,16 @@ brittany = gpd.read_file(
 
 print("Generating population...")
 base = 50
-base = 5
-base = 100
-base = 75
-base = 25
-base = 30
 base = 40
-population = Population(50,
+base = 30
+base = 35
+base = 8
+population = Population(100,
                         nodes,
                         edges,
                         values,
                         base_count=base,
-                        mutation_rate=3/base)
+                        mutation_rate=5/base)
 
 fig = plt.figure()
 figax = fig.add_subplot(111)
@@ -43,7 +41,7 @@ for i in range(1000):
     population.next_generation()
     best = population.best_individual
     print("Generation {:>2} : {:>10}".format(i, str(best)))
-    if i % 25 == 0:
+    if i % 10 == 0:
         utils.plot_individual(best,
                           communes,
                           nodes,

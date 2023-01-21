@@ -73,7 +73,7 @@ class Individual:
             current_probability = probability
             for other in self.edges[gene]:
                 if other in self.genes:
-                    current_probability *= 5
+                    current_probability *= 2
 
             while random.random() < min(0.9, current_probability):
                 # gene move to a random neighbour (in self.edges[gene])
@@ -144,35 +144,28 @@ class Population:
                 self.best_individual = individual
 
     def call_crossover(self):
-        new_individuals = [self.best_individual]
+        new_individuals = []
         # select two parents but more likely to select the best ones
+        self.individuals.sort(key=lambda x: x.fitness, reverse=True)
         for _ in range(self.pop_size - 1):
             parent1 = self.select_parent()
             parent2 = self.select_parent()
-            while parent1 == parent2:
-                parent2 = self.select_parent()
             new_individuals.append(parent1.crossover(parent2))
+        self.individuals = new_individuals
 
     def select_parent(self):
-        # select randomly an individual but more likely to select the best ones
-        # sort individuals by fitness
-        self.individuals.sort(key=lambda x: x.fitness, reverse=True)
-        half = self.pop_size // 2
-        fitness_sum = sum([ind.fitness for ind in self.individuals[:half]])
-        pick = random.uniform(0, fitness_sum)
-        current = 0
-        for ind in self.individuals[:half]:
-            current += ind.fitness
-            if current > pick:
-                return ind
+        top_10_percent = self.individuals[:int(0.1 * len(self.individuals))]
+        return random.choice(top_10_percent)
 
     def mutation(self, probability):
         for individual in self.individuals:
             individual.mutation(probability)
 
     def next_generation(self):
+        best = self.best_individual
         self.best_individual = None
         self.best_fitness = float('-inf')
         self.call_crossover()
         self.mutation(self.mutation_rate)
+        self.individuals.append(best)
         self.call_update_fitness()
