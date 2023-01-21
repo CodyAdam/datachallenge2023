@@ -18,11 +18,11 @@ brittany = gpd.read_file(
     'data/bzh_shapefile/georef-france-commune-millesime.shp')
 
 print("Generating population...")
-base = 35
 base = 8
 base = 30
-base = 40
 base = 50
+base = 40
+base = 35
 population = Population(20,
                         nodes,
                         edges,
