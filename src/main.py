@@ -19,11 +19,11 @@ brittany = gpd.read_file(
 
 print("Generating population...")
 base = 50
-base = 40
-base = 30
 base = 35
 base = 8
-population = Population(100,
+base = 40
+base = 30
+population = Population(20,
                         nodes,
                         edges,
                         values,
