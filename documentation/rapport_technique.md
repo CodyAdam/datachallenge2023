@@ -137,8 +137,13 @@ On a choisi comme solution finale de **40 bases**, car elle est plus résonnable
 **Pour 30 bases** 
 ![](img/30b.gif)
 
+**Pour 35 bases** 
+![](img/35b.gif)
+
 **Pour 40 bases** 
 ![](img/40b.gif)
 
 **Pour 50 bases** 
 ![](img/50b.gif)
+
+Les résultats sont visibles sur dans ce dossier : [`data/img`](../data/img)

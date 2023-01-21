@@ -27,7 +27,7 @@ Animation des générations de notre algorithme génétique :
 
 ![SolutionGif](documentation/img/40b.gif)
 
-Détail de notre solution [ici](documentation/rapport_technique.md).
+### Détail de notre solution [ici (`documentation/rapport_technique`)](documentation/rapport_technique.md).
 
 ### Structure du projet
 
