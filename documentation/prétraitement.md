@@ -7,7 +7,7 @@ Nous vons fait les oppérations suivantes :
 
 # Développement
 
-L'objectif du fichier R est de réaliser un formatage des données afin d'enrichir notre algorithme génétique. Pour cela, nous avons décidé de créer deux nouvelles variables dans le fichier intervention. Ces deux variables cherchent à pondérer la variable intervention cliente et réseau de telles sortes que le poids alloué aux variables est plus fort si le nombre d'interventions y est fréquent.
+L'objectif du fichier R ([`data challenge_doc final.R`](../src/data%20challenge_doc%20final.R)) est de réaliser un formatage des données afin d'enrichir notre algorithme génétique. Pour cela, nous avons décidé de créer deux nouvelles variables dans le fichier intervention. Ces deux variables cherchent à pondérer la variable intervention cliente et réseau de telles sortes que le poids alloué aux variables est plus fort si le nombre d'interventions y est fréquent.
 
 
 - Très bas → 1,0

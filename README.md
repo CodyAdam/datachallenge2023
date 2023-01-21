@@ -5,6 +5,10 @@ L'Équipe :
 - Delisle Juliette
 - Larmet-Demenay Gwendal
 
+
+![Solution](documentation/img/5b.gif)
+![Solution](documentation/img/50b.gif)
+
 # Data Challenge 2023
 
 Le Master Mathématiques Appliquées, Statistique (Universités de Rennes 1 et Rennes 2), le Master Monnaie, Banque, Finance Assurance (Université de Rennes 1), TAC ECONOMICS et l'association Rennes Data Science, organisent un data challenge les 20 et 21 janvier 2023 à la Faculté des Sciences Economiques de Rennes.
@@ -17,7 +21,37 @@ Nous avons choisi le sujet suivant : **Optimisation du positionnement des sites 
 
 # Notre solution
 
-Voir le rapport de technique [ici](documentation/rapport_technique.md).
+![Solution](data/img/b40_gen_200.png)
+
+Animation des générations de notre algorithme génétique :
+
+![SolutionGif](documentation/img/40b.gif)
+
+Détail de notre solution [ici](documentation/rapport_technique.md).
+
+### Structure du projet
+
+```
+📦datachallenge2023
+ ┣ 📂data
+ ┃ ┣ 📂bzh_shapefile                        // Shapefile de la Bretagne
+ ┃ ┣ 📂img                                  // Plots Saved
+ ┃ ┣ 📜communes_bre.csv
+ ┃ ┣ 📜niveau_interventions.csv
+ ┃ ┣ 📜niveau_interventions_improved.csv
+ ┃ ┣ 📜temps_trajet30.csv
+ ┃ ┗ 📜temps_trajet30_filtered.csv
+ ┣ 📂documentation                          
+ ┣ 📂src
+ ┃ ┣ 📜data challenge_doc final.R           // Script R prétraitement
+ ┃ ┣ 📜main.py                              // Programme principal
+ ┃ ┣ 📜parse.py                             // Fonctions de traitement
+ ┃ ┣ 📜genetic.py                           // Algorithme génétique
+ ┃ ┗ 📜utils.py                             // Fonctions utilitaires
+ ┣ 📜.gitignore
+ ┣ 📜README.md
+ ┗ 📜requirements.txt                       // packages Pythons nécessaires
+ ```
 
 # Installation et utilisation
 
