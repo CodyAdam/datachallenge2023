@@ -1,6 +1,8 @@
 from collections import defaultdict
 import heapq
 import geopandas as gpd
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 import matplotlib.pyplot as plt
 
 
@@ -20,16 +22,37 @@ def plot_individual(best,
                        edgecolor='grey',
                        figsize=(22, 12),
                        alpha=0.3)
-    gdf.plot(ax=ax, figsize=(12, 6), markersize=10, color='green', alpha=0.3)
+    gdf.plot(ax=ax, figsize=(12, 6), markersize=10, color='green', alpha=0.25)
+    
     plt.title(f'Communes de Bretagnes - Generation {i}')
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
     plt.xlim(-5.215, -0.798)  # zoom on brittany
     plt.ylim(47.165, 48.984)
-    plt.text(.01, .99, f'Fitness: {best.fitness}',ha='left', va='top', transform=ax.transAxes)
-    plt.text(.01, .95, f'Nombre de bases: {best.base_count}',ha='left', va='top', transform=ax.transAxes)
-    plt.text(.01, .90, f'Communes sans base: {len(best.without_bases)}' ,ha='left', va='top', transform=ax.transAxes)
-    plt.text(.01, .85, f'Temps moyen déplacement: {best.avg_dist_to_base}s',ha='left', va='top', transform=ax.transAxes)
+    plt.text(.01,
+             .95,
+             f'Fitness: {best.fitness}',
+             ha='left',
+             va='top',
+             transform=ax.transAxes)
+    plt.text(.01,
+             .90,
+             f'Nombre de bases: {best.base_count}',
+             ha='left',
+             va='top',
+             transform=ax.transAxes)
+    plt.text(.01,
+             .85,
+             f'Communes sans base: {len(best.without_bases)}',
+             ha='left',
+             va='top',
+             transform=ax.transAxes)
+    plt.text(.01,
+             .80,
+             f'Temps moyen déplacement: {best.avg_dist_to_base}s',
+             ha='left',
+             va='top',
+             transform=ax.transAxes)
     base_names = []
     for gene in best.genes:
         base_names.append(nodes[gene])
@@ -48,6 +71,15 @@ def plot_individual(best,
         not_covered.append(
             gpd.GeoDataFrame(communes_filtered, geometry='geometry'))
 
+
+    for commune in not_covered[:1]:
+        commune.plot(ax=ax,
+                     figsize=(12, 6),
+                     markersize=20,
+                     color='red',
+                     alpha=1)
+    for b in bases[:1]:
+        b.plot(ax=ax, figsize=(12, 6), markersize=60, color='blue', alpha=0.6)
     for commune in not_covered:
         commune.plot(ax=ax,
                      figsize=(12, 6),
@@ -56,6 +88,7 @@ def plot_individual(best,
                      alpha=1)
     for b in bases:
         b.plot(ax=ax, figsize=(12, 6), markersize=60, color='blue', alpha=0.6)
+    plt.legend(['Communes déservies', 'Communes a plus de 30 min d\'une base', 'Bases'])
 
     # clear the figure
     fig.canvas.draw()
