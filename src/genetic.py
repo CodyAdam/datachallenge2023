@@ -6,6 +6,7 @@ import utils
 
 # format for a solution
 class Individual:
+
     def __init__(self, nodes, edges, values, base_count, genes=None):
         self.nodes = nodes
         self.edges = edges
@@ -13,10 +14,9 @@ class Individual:
         self.base_count = base_count
         self.genes = genes
         self.fitness = 0
-        self.max_dist_to_base = None
         self.avg_dist_to_base = None
-        self.max_node_to_base = None
         self.nb_without_base = None
+        self.without_bases = None
 
         if self.genes is None:
             self.genes = set()
@@ -29,20 +29,25 @@ class Individual:
         new = Individual(self.nodes, self.edges, self.values, self.base_count)
         new.genes = self.genes.copy()
         new.fitness = self.fitness
+        new.without_bases = self.without_bases.copy()
+        new.avg_dist_to_base = self.avg_dist_to_base
+        new.nb_without_base = self.nb_without_base
         return new
 
     def update_fitness(self):
         self.fitness = 0
         self.avg_dist_to_base = 0
         self.nb_without_base = 0
+        self.without_bases = []
         for node in self.nodes:
             base, base_dist = self.nearest_base_and_dist(node)
             if base is not None:
                 self.fitness += base_dist * self.values[node]
                 self.avg_dist_to_base += base_dist
             else:
-                self.fitness += 100
+                self.fitness += 10000
                 self.nb_without_base += 1
+                self.without_bases.append(node)
         self.avg_dist_to_base /= len(self.nodes)
         self.fitness = 100000 / self.fitness
 
@@ -54,24 +59,18 @@ class Individual:
             if self.edges[node][current_base] < base_dist:
                 base = node
                 base_dist = self.edges[node][current_base]
-
-        if base and (self.max_dist_to_base is None
-                     or base_dist > self.max_dist_to_base):
-            self.max_dist_to_base = base_dist
-            self.max_node_to_base = (node, base)
         return base, base_dist
 
     def mutation(self, probability):
-        new_genes = self.genes.copy()
-        for gene in range(len(self.genes)):
-            while random.random() < probability:
-                if random.random() < 0.5:
-                    if gene != 0:
-                        gene -= 1
-                else:
-                    if gene != len(self.genes) - 1:
-                        gene += 1
-            new_genes.add(gene)
+        new_genes = set()
+        for gene in (self.genes):
+            new_gene = gene
+            if random.random() < probability:
+                new_gene = random.randint(0, len(self.nodes) - 1)
+            new_genes.add(new_gene)
+        while len(new_genes) < self.base_count:
+            new_genes.add(random.randint(0, len(self.nodes) - 1))
+        self.genes = new_genes
 
     def crossover(self, other):
         new = self.copy()
@@ -92,24 +91,7 @@ class Individual:
     # Display a solution showing the maximum distance between a node and its nearest base
     # The display also shows the average distance between a node and its nearest base
     def __str__(self) -> str:
-        s = f"fitness: {self.fitness};"
-        if self.max_node_to_base is None or self.avg_dist_to_base is None or self.nb_without_base is None:
-            if self.max_node_to_base is None:
-                s += "missing max_node_to_base;" 
-            if self.avg_dist_to_base is None:
-                s += "missing avg_dist_to_base;"
-            if self.nb_without_base is None:
-                s += "missing nb_without_base;"
-            return s
-        
-        max_node, max_base = self.max_node_to_base
-
-        s += "La ville la moin bien desservie est: " + str(
-            max_node) + " en " + str(max_base) + "min"
-        s += "La distance moyenne entre un noeud et sa base la plus proche est: " + str(
-            self.avg_dist_to_base) + "\n"
-        s += "Il y a " + str(
-            self.nb_without_base) + " villes qui ne sont pas desservies"
+        s = f"fitness: {self.fitness}; nb whithout base: {self.nb_without_base}; avg dist to base: {self.avg_dist_to_base};"
         return s
 
     # def get_nearest_base_and_dist() -> str:
@@ -143,18 +125,28 @@ class Population:
                 self.best_fitness = individual.fitness
                 self.best_individual = individual
 
-    def selection(self):
-        # select the best half of the population
-        self.individuals.sort(key=lambda x: x.fitness, reverse=True)
-        self.individuals = self.individuals[:len(self.individuals) // 2]
 
     def call_crossover(self):
-        # crossover the best half of the population
-        for _ in range(len(self.individuals)):
-            index1 = random.randint(0, len(self.individuals) - 1)
-            index2 = random.randint(0, len(self.individuals) - 1)
-            self.individuals.append(self.individuals[index1].crossover(
-                self.individuals[index2]))
+        new_individuals = [self.best_individual]
+        # select two parents but more likely to select the best ones
+        for _ in range(self.pop_size-1):
+            parent1 = self.select_parent()
+            parent2 = self.select_parent()
+            while parent1 == parent2:
+                parent2 = self.select_parent()
+            new_individuals.append(parent1.crossover(parent2))
+    
+    def select_parent(self):
+        # select randomly an individual but more likely to select the best ones
+        fitness_sum = sum([ind.fitness for ind in self.individuals])
+        pick = random.uniform(0, fitness_sum)
+        current = 0
+        for ind in self.individuals:
+            current += ind.fitness
+            if current > pick:
+                return ind
+        
+
 
     def mutation(self, probability):
         for individual in self.individuals:
@@ -163,7 +155,6 @@ class Population:
     def next_generation(self):
         self.best_individual = None
         self.best_fitness = float('-inf')
-        self.selection()
         self.call_crossover()
         self.mutation(self.mutation_rate)
         self.call_update_fitness()

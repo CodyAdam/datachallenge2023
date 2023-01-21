@@ -10,56 +10,45 @@ communes, temps, nodes, edges, values = parse.parse()
 print("Optimizing...")
 edges = utils.optimize_edges(nodes, edges)
 
-print("Generating population...")
-population = Population(200,
-                        nodes,
-                        edges,
-                        values,
-                        base_count=30,
-                        mutation_rate=0.4)
-
-print("Starting evolution...")
-for i in range(20):
-    population.next_generation()
-    print("Generation {:>2} : {:>10}".format(i, str(population.best_individual)))
-
-print("Getting best solution...")
-best = population.best_individual
-base_names = []
-for index, gene in enumerate(best.genes):
-    if gene:
-        base_names.append(nodes[index])
-bases_positions = []
-
 print("Creating GeoDataFrame...")
 gdf = gpd.GeoDataFrame(communes, geometry='geometry')
-
-# Association des bases à leurs coordonnées
-solutions = []
-for name in base_names:
-    ## get the geometry of the commune
-    communes_filtered = communes[communes['Nom Officiel Commune Majuscule'] ==
-                                 name]
-    solutions.append(gpd.GeoDataFrame(communes_filtered, geometry='geometry'))
 
 print("Loading Brittany map...")
 brittany = gpd.read_file(
     'data/bzh_shapefile/georef-france-commune-millesime.shp')
-ax = brittany.plot(color='white', edgecolor='grey', figsize=(12, 6), alpha=0.2)
 
-print("Plotting solution...")
-gdf.plot(ax=ax, figsize=(12, 6), markersize=5)
-for solution in solutions:
-    solution.plot(ax=ax,
-                  figsize=(12, 6),
-                  markersize=1000,
-                  color='red',
-                  alpha=0.3)
-plt.title('Communes de Bretagnes')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-plt.xlim(-5.215, -0.798)  # zoom on brittany
-plt.ylim(47.165, 48.984)
+print("Generating population...")
+base = 50
+base = 5
+base = 100
+base = 75
+base = 25
+population = Population(30,
+                        nodes,
+                        edges,
+                        values,
+                        base_count=base,
+                        mutation_rate=3/base)
 
-print("Showing plot...")
+fig = plt.figure()
+figax = fig.add_subplot(111)
+plt.ion()
 plt.show()
+print("Starting evolution...")
+population.call_update_fitness()
+plt.pause(2)
+for i in range(1000):
+    population.next_generation()
+    best = population.best_individual
+    print("Generation {:>2} : {:>10}".format(i, str(best)))
+    if i % 25 == 0:
+        utils.plot_individual(best,
+                          communes,
+                          nodes,
+                          brittany,
+                          i,
+                          fig,
+                          figax,
+                          gdf,
+                          pause=2,
+                          base=base)
