@@ -1,13 +1,19 @@
-L'Équipe : 
+
+
+# Gagnat du Data Challenge 2023
+
+**Première place** sur 18 équipes au Data Challenge 2023.
+
+**L'Équipe** :
 - Adam Cody
-- Aussant Antoine
+- Aussant Antoine 
 - Delapart Thomas
 - Delisle Juliette
-- Larmet-Demenay Gwendal
+- Larmet-Demenay Gwendal 
 
 
-![Solution](documentation/img/5b.gif)
-![Solution](documentation/img/50b.gif)
+![Photo](documentation/img/win.jpg)
+![Price](documentation/img/price.png)
 
 # Data Challenge 2023
 
