@@ -12,8 +12,9 @@
 - Larmet-Demenay Gwendal 
 
 
+![Price](documentation/img/pres.jpg)
+![Price](documentation/img/working.jpg)
 ![Photo](documentation/img/win.jpg)
-![Price](documentation/img/price.png)
 
 # Data Challenge 2023
 
